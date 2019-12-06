@@ -13,7 +13,7 @@ import java.util.List;
  *
  * @author liweibo
  */
-abstract class JsonModules<M extends JsonModule> {
+public abstract class JsonModules<M extends JsonModule> {
     private List<M> modules = new ArrayList<>();
 
     public JsonModules() {
@@ -106,7 +106,7 @@ abstract class JsonModules<M extends JsonModule> {
      * 核心方法，用来获取能够使用Jackson来序列化的一个页面的所有模块
      * @return
      */
-    List<? extends JsonModule> getJsonModules() {
+    public List<? extends JsonModule> getJsonModules() {
         return modules;
     }
 }

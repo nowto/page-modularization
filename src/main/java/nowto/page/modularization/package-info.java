@@ -82,7 +82,7 @@
  * RawModuleFactory mainBarModuleFactory = ...;
  * RawModuleFactory footerModuleFactory = ...;
  *
- * ModulesFactory modulesFactory = new ModulesFactory();
+ * JsonModulesFactory modulesFactory = new JsonModulesFactory();
  * modulesFactory.addModuleFactory(navigationBarModuleFactory);
  * modulesFactory.addModuleFactory(mainModuleFactory);
  * modulesFactory.addModuleFactory(footerModuleFactory);

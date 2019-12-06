@@ -13,21 +13,21 @@ public abstract class AbstractRawModuleFactory implements RawModuleFactory {
 
     /**
      * 获取实体
-     * @param modulesFactory
+     * @param jsonModulesFactory
      * @param context
      * @return
      */
-    public abstract Object getEntity(ModulesFactory modulesFactory, Map<String, Object> context);
+    public abstract Object getEntity(JsonModulesFactory jsonModulesFactory, Map<String, Object> context);
 
     /**
      * 实现父接口，模板方法
-     * @param modulesFactory modules工厂
+     * @param jsonModulesFactory modules工厂
      * @param context 上下文
      * @return 模块
      */
     @Override
-    public RawModule getModule(ModulesFactory modulesFactory, Map<String, Object> context) {
-        Object entity = getEntity(modulesFactory, context);
+    public RawModule getModule(JsonModulesFactory jsonModulesFactory, Map<String, Object> context) {
+        Object entity = getEntity(jsonModulesFactory, context);
         if (entity == null) {
             return null;
         }

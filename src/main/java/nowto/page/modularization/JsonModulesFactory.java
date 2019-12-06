@@ -11,10 +11,10 @@ import java.util.Map;
  * modules工厂
  * @author liweibo
  */
-public class ModulesFactory {
+public class JsonModulesFactory {
     private List<RawModuleFactory> moduleFactories = new ArrayList<>();
 
-    public ModulesFactory() {
+    public JsonModulesFactory() {
     }
 
     public void addModuleFactory(RawModuleFactory rawModuleFactory) {

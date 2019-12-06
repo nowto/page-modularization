@@ -39,5 +39,17 @@
         </dependency>
     </dependencies>
 
+    <distributionManagement>
+        <repository>
+            <id>central</id>
+            <name>iz8vb1w4wu0mh4jkfvrgbaz-releases</name>
+            <url>http://bin.prev.mydeertrip.com/artifactory/libs-release-local</url>
+        </repository>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <name>iz8vb1w4wu0mh4jkfvrgbaz-snapshots</name>
+            <url>http://bin.prev.mydeertrip.com/artifactory/libs-release-local</url>
+        </snapshotRepository>
+    </distributionManagement>
 
 </project>

@@ -60,7 +60,7 @@
  * ]
  * </pre></blockquote>
  *
- * <p>本jar采用格式2。 同时因为前端只有拿到moduleName时，才知道moduleEntiry该怎么解析， moduleEntity以json字符串返回。</p>
+ * <p>本jar采用格式2。 同时因为前端只有拿到moduleName时，才知道moduleEntiry该怎么解析， moduleEntity可以以嵌套json字符串返回。</p>
  *
  * <p>采用格式2有如下好处：</p>
  *

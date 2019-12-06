@@ -19,7 +19,7 @@ public class NameRawModuleFactory implements RawModuleFactory {
     }
 
     @Override
-    public RawModule getModule(ModulesFactory modulesFactory, Map<String, Object> context) {
+    public RawModule getModule(JsonModulesFactory jsonModulesFactory, Map<String, Object> context) {
         return RawModule.emptyEntityModule(this.getModuleName());
     }
 

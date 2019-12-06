@@ -8,14 +8,14 @@ import org.junit.Test;
 import java.util.Map;
 
 
-public class ModulesFactoryTest {
+public class JsonModulesFactoryTest {
 
     @Test
     public void test() throws JsonProcessingException {
-        ModulesFactory modulesFactory = new ModulesFactory();
-        modulesFactory.addModuleFactory(new AbstractRawModuleFactory() {
+        JsonModulesFactory jsonModulesFactory = new JsonModulesFactory();
+        jsonModulesFactory.addModuleFactory(new AbstractRawModuleFactory() {
             @Override
-            public Object getEntity(ModulesFactory modulesFactory, Map<String, Object> context) {
+            public Object getEntity(JsonModulesFactory jsonModulesFactory, Map<String, Object> context) {
                 return new Person("nowto", 28);
             }
 
@@ -25,9 +25,9 @@ public class ModulesFactoryTest {
             }
         });
 
-        modulesFactory.addModuleFactory(new AbstractRawModuleFactory() {
+        jsonModulesFactory.addModuleFactory(new AbstractRawModuleFactory() {
             @Override
-            public Object getEntity(ModulesFactory modulesFactory, Map<String, Object> context) {
+            public Object getEntity(JsonModulesFactory jsonModulesFactory, Map<String, Object> context) {
                 return new SmartPhone("black", 100);
             }
 
@@ -40,11 +40,11 @@ public class ModulesFactoryTest {
         ObjectMapper om = new ObjectMapper();
         om.enable(SerializationFeature.INDENT_OUTPUT);
         {
-            String result = om.writeValueAsString(modulesFactory.getQuotedModules(null));
+            String result = om.writeValueAsString(jsonModulesFactory.getQuotedModules(null));
             System.out.println(result);
         }
         {
-            String result = om.writeValueAsString(modulesFactory.getNormalModules(null));
+            String result = om.writeValueAsString(jsonModulesFactory.getNormalModules(null));
             System.out.println(result);
         }
     }

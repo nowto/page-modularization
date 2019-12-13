@@ -1,6 +1,11 @@
 package nowto.page.modularization;
 
+import com.fasterxml.jackson.core.JsonFactory;
 import com.fasterxml.jackson.core.JsonGenerator;
+import com.fasterxml.jackson.core.JsonStreamContext;
+import com.fasterxml.jackson.core.ObjectCodec;
+import com.fasterxml.jackson.core.io.SegmentedStringWriter;
+import com.fasterxml.jackson.databind.JsonSerializer;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializerProvider;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
@@ -59,16 +64,11 @@ class QuotedJsonModule implements JsonModule {
     }
 
     public static class EntityJsonSerializer extends StdSerializer<Object> {
-        private ObjectMapper mapper = new ObjectMapper();
 
         public EntityJsonSerializer() {
             super(Object.class);
         }
 
-        public EntityJsonSerializer(ObjectMapper mapper) {
-            super(Object.class);
-            this.mapper = mapper;
-        }
 
         @Override
         public boolean isEmpty(SerializerProvider prov, Object value) {
@@ -77,7 +77,7 @@ class QuotedJsonModule implements JsonModule {
 
         @Override
         public void serialize(Object value, JsonGenerator gen, SerializerProvider provider) throws IOException {
-
+            ObjectMapper mapper = (ObjectMapper) gen.getCodec();
             gen.writeString(mapper.writeValueAsString(value));
         }
     }

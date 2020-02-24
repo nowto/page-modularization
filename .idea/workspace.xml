@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6819da86-41b1-4ddf-9924-228bd5d34b7a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nowto/page/modularization/AbstractRawModuleFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nowto/page/modularization/AbstractModuleFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nowto/page/modularization/JsonModule.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nowto/page/modularization/JsonModules.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nowto/page/modularization/JsonModulesFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nowto/page/modularization/ModulesFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nowto/page/modularization/NameRawModuleFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nowto/page/modularization/NameModuleFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nowto/page/modularization/NormalJsonModule.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nowto/page/modularization/NormalJsonModules.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nowto/page/modularization/QuotedJsonModule.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nowto/page/modularization/QuotedJsonModules.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nowto/page/modularization/RawModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nowto/page/modularization/Module.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nowto/page/modularization/RawModuleFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nowto/page/modularization/ModuleFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/nowto/page/modularization/JsonModulesFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/nowto/page/modularization/ModulesFactoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,38 +169,6 @@
     </task>
     <servers />
   </component>
-  <component name="TestHistory">
-    <history-entry file="JsonModulesFactoryTest_test - 2019.12.13 at 18h 15m 46s.xml">
-      <configuration name="JsonModulesFactoryTest.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="JsonModulesFactoryTest_test - 2019.12.13 at 18h 20m 53s.xml">
-      <configuration name="JsonModulesFactoryTest.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="JsonModulesFactoryTest_test - 2019.12.13 at 18h 21m 47s.xml">
-      <configuration name="JsonModulesFactoryTest.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="JsonModulesFactoryTest_test - 2019.12.13 at 18h 22m 17s.xml">
-      <configuration name="JsonModulesFactoryTest.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="JsonModulesFactoryTest_test - 2019.12.13 at 18h 26m 23s.xml">
-      <configuration name="JsonModulesFactoryTest.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="JsonModulesFactoryTest_test - 2019.12.13 at 18h 26m 57s.xml">
-      <configuration name="JsonModulesFactoryTest.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="JsonModulesFactoryTest_test - 2019.12.13 at 18h 27m 08s.xml">
-      <configuration name="JsonModulesFactoryTest.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="JsonModulesFactoryTest_test - 2019.12.13 at 18h 27m 13s.xml">
-      <configuration name="JsonModulesFactoryTest.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="JsonModulesFactoryTest_test - 2019.12.13 at 18h 30m 11s.xml">
-      <configuration name="JsonModulesFactoryTest.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="JsonModulesFactoryTest_test - 2019.12.13 at 18h 31m 03s.xml">
-      <configuration name="JsonModulesFactoryTest.test" configurationId="JUnit" />
-    </history-entry>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
@@ -240,25 +193,25 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="378" y="154" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.800@0.0.1280.800" timestamp="1582527176834" />
-    <state width="1238" height="232" key="GridCell.Tab.0.bottom" timestamp="1582531457583">
+    <state width="1238" height="232" key="GridCell.Tab.0.bottom" timestamp="1582536744642">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="232" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1582531457583" />
+    <state width="1238" height="232" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1582536744642" />
     <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.23.1280.730@0.23.1280.730" timestamp="1582528867214" />
-    <state width="1238" height="232" key="GridCell.Tab.0.center" timestamp="1582531457574">
+    <state width="1238" height="232" key="GridCell.Tab.0.center" timestamp="1582536744640">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="232" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1582531457574" />
+    <state width="1238" height="232" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1582536744640" />
     <state width="1238" height="212" key="GridCell.Tab.0.center/0.23.1280.730@0.23.1280.730" timestamp="1582528867212" />
-    <state width="1238" height="232" key="GridCell.Tab.0.left" timestamp="1582531457572">
+    <state width="1238" height="232" key="GridCell.Tab.0.left" timestamp="1582536744639">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="232" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1582531457572" />
+    <state width="1238" height="232" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1582536744639" />
     <state width="1238" height="212" key="GridCell.Tab.0.left/0.23.1280.730@0.23.1280.730" timestamp="1582528867209" />
-    <state width="1238" height="232" key="GridCell.Tab.0.right" timestamp="1582531457576">
+    <state width="1238" height="232" key="GridCell.Tab.0.right" timestamp="1582536744641">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="232" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1582531457576" />
+    <state width="1238" height="232" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1582536744641" />
     <state width="1238" height="212" key="GridCell.Tab.0.right/0.23.1280.730@0.23.1280.730" timestamp="1582528867213" />
     <state x="178" y="62" key="Maven.ArtifactSearchDialog" timestamp="1582525352213">
       <screen x="0" y="0" width="1280" height="800" />

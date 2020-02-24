@@ -10,14 +10,14 @@ import java.util.function.BooleanSupplier;
 
 public class EntityQuoteJsonSerializer extends StdSerializer<Module> {
 
-    private BooleanSupplier needAuote = () -> false;
+    private BooleanSupplier quoteCondition = () -> false;
     public EntityQuoteJsonSerializer() {
         super(Module.class);
     }
 
-    public EntityQuoteJsonSerializer(BooleanSupplier needAuote) {
+    public EntityQuoteJsonSerializer(BooleanSupplier quoteCondition) {
         super(Module.class);
-        this.needAuote = needAuote;
+        this.quoteCondition = quoteCondition;
     }
 
 
@@ -30,7 +30,7 @@ public class EntityQuoteJsonSerializer extends StdSerializer<Module> {
     public void serialize(Module value, JsonGenerator gen, SerializerProvider provider) throws IOException {
         gen.writeStartObject();
         gen.writeStringField("name", value.getName());
-        if (needAuote.getAsBoolean()) {
+        if (quoteCondition.getAsBoolean()) {
             ObjectMapper mapper = (ObjectMapper) gen.getCodec();
             String valueString = mapper.writeValueAsString(value.getEntity());
             gen.writeObjectField("entity", valueString);

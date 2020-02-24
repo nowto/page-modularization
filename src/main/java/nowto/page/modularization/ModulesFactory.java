@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.function.Supplier;
 
 /**
  * modules工厂
@@ -20,6 +21,18 @@ public class ModulesFactory {
     public void addModuleFactory(ModuleFactory moduleFactory) {
         Assert.notNull(moduleFactory, "模块工厂不能为null");
         moduleFactories.add(moduleFactory);
+    }
+
+    public void addModuleFactory(String moduleName, Object  entity) {
+        Assert.hasText(moduleName, "实体名称不能为空");
+        Assert.notNull(entity, "实体工厂不能为null");
+        moduleFactories.add(new ModuleFactoryAdapter(moduleName, () -> entity));
+    }
+
+    public void addModuleFactory(String moduleName, Supplier  entityFactory) {
+        Assert.hasText(moduleName, "实体名称不能为空");
+        Assert.notNull(entityFactory, "实体工厂不能为null");
+        moduleFactories.add(new ModuleFactoryAdapter(moduleName, entityFactory));
     }
 
     public void addModuleFactories(List<ModuleFactory> moduleFactories) {

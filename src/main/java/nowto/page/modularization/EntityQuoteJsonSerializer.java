@@ -8,7 +8,7 @@ import com.fasterxml.jackson.databind.ser.std.StdSerializer;
 import java.io.IOException;
 import java.util.function.BooleanSupplier;
 
-public class EntityQuoteJsonSerializer extends StdSerializer<Module> {
+class EntityQuoteJsonSerializer extends StdSerializer<Module> {
 
     private BooleanSupplier quoteCondition = () -> false;
     public EntityQuoteJsonSerializer() {

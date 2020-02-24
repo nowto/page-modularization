@@ -81,11 +81,11 @@ RawModuleFactory navigationBarModuleFactory = new NavigationBarModuleFactory();
 RawModuleFactory mainBarModuleFactory = ...;
 RawModuleFactory footerModuleFactory = ...;
 
-ModulesFactory jsonModulesFactory = new ModulesFactory();
-jsonModulesFactory.addModuleFactory(navigationBarModuleFactory);
-jsonModulesFactory.addModuleFactory(mainModuleFactory);
-jsonModulesFactory.addModuleFactory(footerModuleFactory);
+ModulesFactory modulesFactory = new ModulesFactory();
+modulesFactory.addModuleFactory(navigationBarModuleFactory);
+modulesFactory.addModuleFactory(mainModuleFactory);
+modulesFactory.addModuleFactory(footerModuleFactory);
 
-//会在moduleEntity两端加双引号，以json字符串嵌套的方式返回，如果不需要，jsonModulesFactory.getNormalModules(context);
-List<? extends JsonModule>  pageModules = jsonModulesFactory.getQuotedModules(context);
+//会在moduleEntity两端加双引号，以json字符串嵌套的方式返回，如果不需要，modulesFactory.getNormalModules(context);
+List<? extends JsonModule>  pageModules = modulesFactory.getQuotedModules(context);
 </pre></blockquote>

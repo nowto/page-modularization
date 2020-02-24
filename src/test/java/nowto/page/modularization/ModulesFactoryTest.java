@@ -3,19 +3,20 @@ package nowto.page.modularization;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
+import com.fasterxml.jackson.databind.module.SimpleModule;
 import org.junit.Test;
 
 import java.util.Map;
 
 
-public class JsonModulesFactoryTest {
+public class ModulesFactoryTest {
 
     @Test
     public void test() throws JsonProcessingException {
-        JsonModulesFactory jsonModulesFactory = new JsonModulesFactory();
-        jsonModulesFactory.addModuleFactory(new AbstractRawModuleFactory() {
+        ModulesFactory modulesFactory = new ModulesFactory();
+        modulesFactory.addModuleFactory(new AbstractModuleFactory() {
             @Override
-            public Object getEntity(JsonModulesFactory jsonModulesFactory, Map<String, Object> context) {
+            public Object getEntity(ModulesFactory modulesFactory, Map<String, Object> context) {
                 return new Person("nowto", 28);
             }
 
@@ -25,9 +26,9 @@ public class JsonModulesFactoryTest {
             }
         });
 
-        jsonModulesFactory.addModuleFactory(new AbstractRawModuleFactory() {
+        modulesFactory.addModuleFactory(new AbstractModuleFactory() {
             @Override
-            public Object getEntity(JsonModulesFactory jsonModulesFactory, Map<String, Object> context) {
+            public Object getEntity(ModulesFactory modulesFactory, Map<String, Object> context) {
                 return new SmartPhone("black", 100);
             }
 
@@ -39,12 +40,12 @@ public class JsonModulesFactoryTest {
 
         ObjectMapper om = new ObjectMapper();
         om.enable(SerializationFeature.INDENT_OUTPUT);
+
+        SimpleModule module = new SimpleModule();
+        module.addSerializer(new EntityQuoteJsonSerializer());
+        om.registerModule(module);
         {
-            String result = om.writeValueAsString(jsonModulesFactory.getQuotedModules(null));
-            System.out.println(result);
-        }
-        {
-            String result = om.writeValueAsString(jsonModulesFactory.getNormalModules(null));
+            String result = om.writeValueAsString(modulesFactory.getModules(null));
             System.out.println(result);
         }
     }

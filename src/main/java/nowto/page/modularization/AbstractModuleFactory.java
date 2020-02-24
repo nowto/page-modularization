@@ -9,25 +9,25 @@ import java.util.Map;
 /**
  * 抽象ModuleFacoty，方便子类实现ModuleFacoty
  */
-public abstract class AbstractRawModuleFactory implements RawModuleFactory {
+public abstract class AbstractModuleFactory implements ModuleFactory {
 
     /**
      * 获取实体
-     * @param jsonModulesFactory
+     * @param modulesFactory
      * @param context
      * @return
      */
-    public abstract Object getEntity(JsonModulesFactory jsonModulesFactory, Map<String, Object> context);
+    public abstract Object getEntity(ModulesFactory modulesFactory, Map<String, Object> context);
 
     /**
      * 实现父接口，模板方法
-     * @param jsonModulesFactory modules工厂
+     * @param modulesFactory modules工厂
      * @param context 上下文
      * @return 模块
      */
     @Override
-    public RawModule getModule(JsonModulesFactory jsonModulesFactory, Map<String, Object> context) {
-        Object entity = getEntity(jsonModulesFactory, context);
+    public Module getModule(ModulesFactory modulesFactory, Map<String, Object> context) {
+        Object entity = getEntity(modulesFactory, context);
         if (entity == null) {
             return null;
         }
@@ -54,6 +54,6 @@ public abstract class AbstractRawModuleFactory implements RawModuleFactory {
                 return null;
             }
         }
-        return new RawModule(getModuleName(), entity);
+        return new Module(getModuleName(), entity);
     }
 }

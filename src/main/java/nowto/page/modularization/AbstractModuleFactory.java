@@ -28,6 +28,9 @@ public abstract class AbstractModuleFactory implements ModuleFactory {
     @Override
     public Module getModule(ModulesFactory modulesFactory, Map<String, Object> context) {
         Object entity = getEntity(modulesFactory, context);
+        if (modulesFactory.isRetainAdvise()) {
+            return new Module(getModuleName(), entity);
+        }
         if (entity == null) {
             return null;
         }

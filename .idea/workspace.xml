@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="6819da86-41b1-4ddf-9924-228bd5d34b7a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nowto/page/modularization/AbstractModuleFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nowto/page/modularization/AbstractModuleFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nowto/page/modularization/ModulesFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nowto/page/modularization/ModulesFactory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +56,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -165,6 +169,9 @@
       <workItem from="1576227822372" duration="5327000" />
       <workItem from="1582524800350" duration="1086000" />
       <workItem from="1582525984060" duration="5206000" />
+      <workItem from="1582552741843" duration="3372000" />
+      <workItem from="1582598015394" duration="402000" />
+      <workItem from="1582879432392" duration="1929000" />
     </task>
     <servers />
   </component>
@@ -172,6 +179,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="453" y="116" key="#com.intellij.ide.util.MemberChooser" timestamp="1582879631749">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="453" y="116" key="#com.intellij.ide.util.MemberChooser/0.0.1280.800@0.0.1280.800" timestamp="1582879631749" />
     <state x="489" y="296" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1582524843935">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -184,10 +195,10 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="404" y="243" key="#com.intellij.refactoring.move.moveInner.MoveInnerDialog/0.0.1280.800@0.0.1280.800" timestamp="1582526451598" />
-    <state x="62" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1582531341311">
+    <state x="62" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1582880858053">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="62" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1280.800@0.0.1280.800" timestamp="1582531341311" />
+    <state x="62" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1280.800@0.0.1280.800" timestamp="1582880858053" />
     <state x="378" y="154" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1582527176834">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -220,10 +231,18 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="141" y="39" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1582526112225" />
-    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1582540246008">
+    <state x="370" y="150" width="540" height="524" key="StructurePopup" timestamp="1582880085377">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1582540246008" />
+    <state x="370" y="150" width="540" height="524" key="StructurePopup/0.0.1280.800@0.0.1280.800" timestamp="1582880085377" />
+    <state x="317" y="232" key="com.intellij.ide.util.TipDialog" timestamp="1582598034368">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="317" y="232" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1582598034368" />
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1582881073249">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1582881073249" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
